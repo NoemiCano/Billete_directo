@@ -1,0 +1,171 @@
+
+:root{
+    --font_title: "Chau Philomene One", sans-serif;
+    --font_text: "Raleway", sans-serif;
+    --color_primary: #ea1744;
+    --color_secondary: #ff4000;
+    --color_tertiary: #ffa51f;
+    --color_fourt: #1800ad;
+    --color_headerFooter: rgb(243, 243, 243);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font_text);
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: var(--font_title);
+}
+
+h2{
+    font-family: var(--font_title);
+}
+
+h3{
+    font-family: var(--font_title);
+}
+
+/* ---------------------------------HEADER-------------------------------- */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color_headerFooter);
+    padding: 10px;
+}
+
+.header__logo{
+    width: 100px;
+    height: auto;
+    padding-left: 60px;
+}
+
+nav{
+    display: flex;
+    padding-right: 20px;
+
+}
+
+.nav__text{
+    color: var(--color_secondary);
+    font-family: var(--font_title);
+}
+
+
+.nav__text-button{
+    background-color: var(--color_secondary);
+    color: var(--color_headerFooter);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* ---------------------------------HERO-------------------------------- */
+
+.a-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        rgba(250, 250, 250, 0.479),
+        rgba(252, 252, 252, 0.505)
+        ), 
+        url(/Images/descenso.jpg);
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.a-hero_title{
+    color: var(--color_fourt);
+    font-size: 60px;
+}
+
+/* ---------------------------------Destinations-------------------------------- */
+
+.a-destinations{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.a-destinations__banners{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.a-destinations__title{
+    width: 93.5%;
+    text-align: left;
+    color: var(--color_fourt);
+}
+
+.a-carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.a-carrousel__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 24.7%;
+    min-width: 16,7%;
+    
+    padding: 0 12px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.a-carrousel__img-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.a-carrousel__img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform .3s ease-in-out;
+
+}
+
+.a-carrousel__img:hover{
+    transform: scale(1.15);
+}
+
+.a-carrousel__text{
+    margin-top: 10px;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+}
+
+.a-carrousel__text-small{
+    margin: 0;
+    font-weight: 500;
+    color: grey;
+    width: 100%;
+    text-align: left;
+}
