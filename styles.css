@@ -7,7 +7,6 @@
     --color_secondary: #ff4000;
     --color_tertiary: #ffa51f;
     --color_fourt: #1800ad;
-    --color_black: rgb(55, 48, 48);
     --color_headerFooter: rgb(243, 243, 243);
 }
 
@@ -27,53 +26,24 @@ h1{
 
 h2{
     font-family: var(--font_title);
+    color: var(--color_fourt);
+    font-size: 3rem;
+    line-height: 50px;
+    font-weight: 500;
 }
 
 h3{
     font-family: var(--font_title);
 }
 
-.button{ 
-    background-color: var(--color_secondary);
-    color: var(--color_headerFooter);
-    padding: 10px;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.button:hover{
-    background-color: var(--color_primary);
-    transform: translateY(-3px);
-}
-
-/* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
-::-webkit-scrollbar-thumb {
-    background: #1800ad;
-    border-radius: 0;
-}
-
-::-webkit-scrollbar-track {
-    background: #fdfbf7;
-}
-
 /* #region ---------------------------------HEADER-------------------------------- */
 
 header{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--color_headerFooter);
-    width: 100%;
-}
-
-.header__contain{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
-
 }
 
 .header__logo{
@@ -89,31 +59,16 @@ nav{
 }
 
 .nav__text{
-    color: var(--color_black);
-    font-family: var(--font_text);
-    font-weight: 600;
-    font-size: 14px;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
+    color: var(--color_secondary);
+    font-family: var(--font_title);
 }
 
-.nav__text:hover,
-.nav__text.active{
-    border-bottom: 2px solid var(--color_secondary);
-    
-}
 
-.button{ 
+.nav__text-button{
     background-color: var(--color_secondary);
     color: var(--color_headerFooter);
     padding: 10px;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.button:hover{
-    background-color: var(--color_primary);
-    transform: translateY(-3px);
+    border-radius: 20px;
 }
 
 /* #endregion */
@@ -140,8 +95,7 @@ nav{
 }
 
 .a-hero_title{
-    color: var(--color_secondary);
-    text-shadow: 2px 3px 0px rgb(70, 70, 70, 0.75);
+    color: var(--color_fourt);
     font-size: 60px;
 }
 
@@ -163,7 +117,7 @@ nav{
 .a-destinations__title{
     width: 93.5%;
     text-align: left;
-    color: var(--color_secondary);
+    color: var(--color_fourt);
 }
 
 .a-carrousel{
@@ -187,7 +141,7 @@ nav{
 
 }
 
-.a-carrousel__imgContainer {
+.a-carrousel__img-container {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -216,7 +170,7 @@ nav{
     text-align: left;
 }
 
-.a-carrousel__text--small{
+.a-carrousel__text-small{
     margin: 0;
     font-weight: 500;
     color: grey;
@@ -224,15 +178,67 @@ nav{
     text-align: left;
 }
 
-/* 
----------------------------------Home-------------------------------- 
-*/
+/* #endregion */
+
+.destinations{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.destinations__container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+}
+
+.destinations__top{
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+}
 
 .tag{
     color: var(--color_primary);
-    font-weight: 700;
     font-family: var(--font_text);
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
 }
 
-/* #endregion */
+.subtitle{
+    color: var(--color_fourt);
+    font-family: var(--font_title);
+    font-size: 1.5rem;
+    margin-top: 0;
+}
 
+.destinations__button{
+    font-family: var(--font_text);
+    color: var(--color_fourt);
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.destinations__arrow{
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.destinations__subtitle{
+    margin: 0;
+}

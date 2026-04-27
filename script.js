@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         // Caso especial para la página de inicio (si la ruta es solo "/")
-        if (currentPath === "/" && link.getAttribute('href') === "index.html") {
+        if (currentPath === "/" && link.getAttribute('href') === "index_l.html") {
             link.classList.add('active');
         }
     });
