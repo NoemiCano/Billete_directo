@@ -6,6 +6,7 @@
     --color_secondary: #ff4000;
     --color_tertiary: #ffa51f;
     --color_fourt: #1800ad;
+    --color_black: rgb(55, 48, 48);
     --color_headerFooter: rgb(243, 243, 243);
 }
 
@@ -31,14 +32,47 @@ h3{
     font-family: var(--font_title);
 }
 
+.button{ 
+    background-color: var(--color_secondary);
+    color: var(--color_headerFooter);
+    padding: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.button:hover{
+    background-color: var(--color_primary);
+    transform: translateY(-3px);
+}
+
+/* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
+::-webkit-scrollbar-thumb {
+    background: #1800ad;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: #fdfbf7;
+}
+
 /* #region ---------------------------------HEADER-------------------------------- */
 
 header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--color_headerFooter);
+    width: 100%;
+}
+
+.header__contain{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
     padding: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+
 }
 
 .header__logo{
@@ -54,16 +88,31 @@ nav{
 }
 
 .nav__text{
-    color: var(--color_secondary);
-    font-family: var(--font_title);
+    color: var(--color_black);
+    font-family: var(--font_text);
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
 }
 
+.nav__text:hover,
+.nav__text.active{
+    border-bottom: 2px solid var(--color_secondary);
+    
+}
 
-.nav__text-button{
+.button{ 
     background-color: var(--color_secondary);
     color: var(--color_headerFooter);
     padding: 10px;
-    border-radius: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.button:hover{
+    background-color: var(--color_primary);
+    transform: translateY(-3px);
 }
 
 /* #endregion */
@@ -90,7 +139,8 @@ nav{
 }
 
 .a-hero_title{
-    color: var(--color_fourt);
+    color: var(--color_secondary);
+    text-shadow: 2px 3px 0px rgb(70, 70, 70, 0.75);
     font-size: 60px;
 }
 
@@ -112,7 +162,7 @@ nav{
 .a-destinations__title{
     width: 93.5%;
     text-align: left;
-    color: var(--color_fourt);
+    color: var(--color_secondary);
 }
 
 .a-carrousel{
@@ -136,7 +186,7 @@ nav{
 
 }
 
-.a-carrousel__img-container {
+.a-carrousel__imgContainer {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -165,7 +215,7 @@ nav{
     text-align: left;
 }
 
-.a-carrousel__text-small{
+.a-carrousel__text--small{
     margin: 0;
     font-weight: 500;
     color: grey;
