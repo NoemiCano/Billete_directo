@@ -174,3 +174,8 @@ nav{
 ---------------------------------Home-------------------------------- 
 */
 
+.tag{
+    color: var(--color_primary);
+    font-weight: 700;
+    font-family: var(--font_text);
+}
