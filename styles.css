@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root{
     --font_title: "Chau Philomene One", sans-serif;
@@ -31,7 +32,7 @@ h3{
     font-family: var(--font_title);
 }
 
-/* ---------------------------------HEADER-------------------------------- */
+/* #region ---------------------------------HEADER-------------------------------- */
 
 header{
     display: flex;
@@ -66,6 +67,9 @@ nav{
     border-radius: 20px;
 }
 
+/* #endregion */
+
+/* #region Activities */
 /* ---------------------------------HERO-------------------------------- */
 
 .a-hero{
@@ -179,3 +183,6 @@ nav{
     font-weight: 700;
     font-family: var(--font_text);
 }
+
+/* #endregion */
+
