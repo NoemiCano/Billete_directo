@@ -28,8 +28,7 @@ body {
     height: auto;
 }
 
-.button{ 
-    background-color: var(--color_secondary);
+.button{
     color: var(--color_white);
     padding: 10px;
     display: inline-block;
@@ -38,9 +37,32 @@ body {
     font-size: 14px;
 }
 
-.button:hover{
-        background-color: var(--color_primary);
-        transform: translateY(-3px);
+.button--orange{
+    background-color: var(--color_secondary);
+}
+
+.button--orange:hover{
+    background-color: var(--color_primary);
+}
+
+.button--white{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid var(--color_white);
+}
+
+.button--white:hover{
+    background-color: var(--color_primary);
+}
+
+.button--blue{
+    background-color: var(--color_fourth);
+}
+.button--blue:hover{
+    background-color: var(--color_secondary);
+}
+
+.button--movement:hover{
+    transform: translateY(-3px);
 }
 
 /* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
@@ -71,6 +93,10 @@ ul, nav{
 
 h1{
     font-family: var(--font_title);
+    color: var(--color_fourth);
+    font-size: 3.8rem;
+    line-height: 50px;
+    font-weight: 500;
 }
 
 h2 {
@@ -115,6 +141,18 @@ h3 {
 
 .text__m--grey{
     color: rgb(128, 127, 134);
+}
+
+.txt--orange{
+    color: var(--color_secondary);
+}
+
+.txt--white{
+    color: var(--color_white);
+}
+
+.txt--yellow{
+    color: var(--color_tertiary);
 }
 
 /* #endregion */
@@ -256,20 +294,11 @@ header{
 /* #region -------------------------PAGINA DE EXPERIENCIAS------------------------- */
 /* ---------------------------------HERO-------------------------------- */
 
-.a-hero {
+.e-hero{ /* Todos los ssection deben ser width 80% */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(250, 250, 250, 0.479),
-            rgba(252, 252, 252, 0.505)),
-        url(/Images/descenso.jpg);
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    width: 80%;
 }
 
 .a-hero_title{
