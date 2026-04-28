@@ -108,32 +108,33 @@ h2 {
 
 h3 {
     font-family: var(--font_title);
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
+    color: var(--color_fourth);
 }
 
 .tag{
     color: var(--color_primary);
     font-family: var(--font_text);
+    text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 3px;
     font-size: 0.8rem;
 }
 
 .subtitle{
-    color: var(--color_fourth);
-    font-family: var(--font_title);
-    font-size: 1.5rem;
-    margin-top: 0;
+    margin: 0;
 }
 
 .heading{
     color: var(--color_fourth);
-    
+    margin: 0px;
 }
 
 .heading--footer{
     color:var(--color_tertiary);
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .text__m{
@@ -239,7 +240,8 @@ header{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:start;
+    margin: 50px;
 }
 
 .footer__column{
@@ -433,8 +435,126 @@ header{
     stroke-width: 2;
 }
 
-.destinations__subtitle{
+.destinations__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.card{
+    border: 2px solid var(--color_contrast);
+    width: 100%;
+}
+
+.card--padding{
+    padding: 20px;
+}
+
+.card__img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card__texts{
+    padding: 5px 25px;
+}
+
+.card__text{
+    color: var(--color_fourth);
+    letter-spacing: 1px;
+    font-size: 0.83rem;
+    margin-bottom: -25px;
+}
+
+.card__text2{
+    color: var(--color_fourth);
+    font-size: 0.9rem;
+    margin-top: -20px;
+}
+
+.card__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    height: 80px;
+}
+
+.card__text--price{
+    color: rgb(153, 153, 153);
     margin: 0;
+}
+
+.card__priceText{
+    color: var(--color_secondary);
+    font-family: var(--font_title);
+    font-size: 1.5rem;
+    margin: 0;
+}   
+
+.card__divider{
+    border: none;
+    border-top: 1px solid var(--color_contrast);
+    margin: 0;
+    width: 90%;
+    margin-left: 25px;
+}
+
+.card__tag{
+    background-color: var(--color_secondary);
+    color: white;
+    padding: 6px 12px;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    margin-bottom: -25px;
+    font-weight: 600;
+    width: fit-content;
+    position: relative;
+    bottom: 235px;
+    left: 20px;
+}
+
+.card__tag--rating{
+    background-color: white;
+    color: var(--color_fourth);
+    font-weight: 700;
+    bottom: 50px;
+    left: 430px;
+}
+
+/* #endregion */
+
+/* #region ---------------------------------HOME - LAURA-------------------------------- */
+
+.travel{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.travel__container{
+    width: 80%;
+}
+
+.travel__items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.travel__icon{
+    width: 25px;
+    background-color: var(--color_secondary);
+    padding: 15px;
+    margin-bottom: 10px;
 }
 
 /* #endregion */
