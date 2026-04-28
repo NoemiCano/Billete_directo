@@ -27,7 +27,7 @@ body {
 
 .button{ 
     background-color: var(--color_secondary);
-    color: var(--color_headerFooter);
+    color: var(--color_contrast);
     padding: 10px;
     display: inline-block;
     transition: transform 0.3s ease;
