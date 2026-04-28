@@ -32,6 +32,8 @@ body {
     padding: 10px;
     display: inline-block;
     transition: transform 0.3s ease;
+    font-weight: 600;
+    font-size: 14px;
 }
 
 .button:hover{
@@ -140,13 +142,6 @@ header{
 .header__nav{
     display: flex;
     width: auto;
-}
-
-
-.header__logo{
-    width: 100px;
-    height: auto;
-    padding-left: 60px;
 }
 
 .nav__container{
@@ -340,10 +335,10 @@ header{
     text-align: left;
 }
 
-.a-carrousel__text-small{
+.a-carrousel__text--small{
     margin: 0;
     font-weight: 500;
-    color: grey;
+    color: var(--color_contrast);
     width: 100%;
     text-align: left;
 }
