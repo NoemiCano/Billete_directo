@@ -6,9 +6,7 @@
     --color_primary: #ea1744;
     --color_secondary: #ff4000;
     --color_tertiary: #ffa51f;
-    --color_fourt: #1800ad;
-    --color_headerFooter: rgb(243, 243, 243);
-    --color_fourth: #1800ad; /* usado en el prototipo 0B0054 :( */
+    --color_fourth: #1800ad; /* usado en el prototipo 0B0054 */
     --color_contrast: rgb(243, 243, 243);
 }
 
@@ -19,6 +17,8 @@ body {
     font-size: 14px;
     color: var(--color_contrast);
 }
+
+/* #region TEXT*/
 
 a {
     text-decoration: none;
@@ -41,6 +41,31 @@ h3 {
     font-family: var(--font_title);
     font-size: 24px;
 }
+
+.tag{
+    color: var(--color_primary);
+    font-family: var(--font_text);
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+}
+
+.subtitle{
+    color: var(--color_fourt);
+    font-family: var(--font_title);
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.text__m{
+    font-size: 16px;
+}
+
+.text__m--white{
+    color: var(--color_contrast);
+}
+
+/* #endregion */
 
 /* #region ---------------------------------HEADER-------------------------------- */
 
@@ -117,14 +142,6 @@ nav {
     align-items: center;
     margin: 5px;
     border-top: 1px solid var(--color_contrast);
-}
-
-.text__m{
-    font-size: 16px;
-}
-
-.text__m--white{
-    color: var(--color_contrast);
 }
 
 .footer__icon{
@@ -274,21 +291,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items:end;
-}
-
-.tag{
-    color: var(--color_primary);
-    font-family: var(--font_text);
-    font-weight: 700;
-    letter-spacing: 3px;
-    font-size: 0.8rem;
-}
-
-.subtitle{
-    color: var(--color_fourt);
-    font-family: var(--font_title);
-    font-size: 1.5rem;
-    margin-top: 0;
 }
 
 .destinations__button{
