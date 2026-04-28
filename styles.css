@@ -7,7 +7,7 @@
     --color_secondary: #ff4000;
     --color_tertiary: #ffa51f;
     --color_fourt: #1800ad;
-    --color_black: rgb(55, 48, 48);
+    --color_black: #373030;
     --color_headerFooter: rgb(243, 243, 243);
 }
 
@@ -17,8 +17,18 @@ body{
     font-family: var(--font_text);
 }
 
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+
 a{
     text-decoration: none;
+}
+
+ul, nav{
+    list-style: none;
 }
 
 h1{
@@ -59,33 +69,35 @@ h3{
 /* #region ---------------------------------HEADER-------------------------------- */
 
 header{
-    display: flex;
-    align-items: center;
     background-color: var(--color_headerFooter);
     width: 100%;
 }
 
 .header__contain{
     display: flex;
-    width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding: 1rem 2rem;
+
+    max-width: 1200px;  /* El ancho máximo que quieras que tenga tu web */
+    margin: 0 auto;     /* Centra el bloque en la pantalla sin romper el width */
+    box-sizing: border-box;
 
 }
 
-.header__logo{
-    width: 100px;
-    height: auto;
-    padding-left: 60px;
-}
-
-nav{
+.header__nav{
     display: flex;
-    padding-right: 20px;
+    width: auto;
+}
 
+.nav__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    
 }
 
 .nav__text{
