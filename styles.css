@@ -65,6 +65,17 @@ body {
     transform: translateY(-3px);
 }
 
+.button--experiences{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    letter-spacing: 3px;
+}
+
 /* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
 ::-webkit-scrollbar-thumb {
     background: var(--color_fourth);
@@ -137,6 +148,11 @@ h3 {
 
 .text__m{
     font-size: 16px;
+}
+
+.text__m--experiences{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .text__m--grey{
@@ -552,12 +568,14 @@ header{
 }
 
 .experiences{
+    width: 100%;
     background-color: var(--color_tertiary);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 /* #endregion */
