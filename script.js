@@ -1,3 +1,5 @@
+// #region ----------Hover Header----------
+
 document.addEventListener("DOMContentLoaded", function() {
     const currentPath = window.location.pathname;
 
@@ -16,3 +18,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// #endregion
+
+// #region ----------Menú Hamburguesa----------
+
+const menuIcon = document.getElementById('menu__icon');
+const navMenu = document.querySelector('.header__nav');
+const navButton = document.getElementById('menu__button');
+
+menuIcon.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+});
+
+// Opcional: Cerrar el menú al hacer clic en un enlace
+document.querySelectorAll('.nav__text, .only-mobile').forEach(n => n.addEventListener('click', () => {
+    navMenu.classList.remove('show');
+}));
+
+// #endregion
