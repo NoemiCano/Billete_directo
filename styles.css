@@ -122,7 +122,6 @@ h3 {
 /* #region ---------------------------------HEADER-------------------------------- */
 
 header{
-    display: flex;
     align-items: center;
     background-color: var(--color_white);
     width: 100%;
