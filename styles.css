@@ -11,11 +11,14 @@
     --color_contrast: rgb(243, 243, 243);
 }
 
+
 body {
     margin: 0;
     padding: 0;
     font-family: var(--font_text);
 }
+
+/* #region ELEMENTS */
 
 .logo{
     width: 100px;
@@ -35,6 +38,17 @@ body {
     transform: translateY(-3px);
 }
 
+/* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
+::-webkit-scrollbar-thumb {
+    background: #1800ad;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: #fdfbf7;
+}
+
+/* #endregion */
 
 /* #region TEXT*/
 
@@ -91,29 +105,6 @@ h3 {
 }
 
 /* #endregion */
-
-.button{ 
-    background-color: var(--color_secondary);
-    color: var(--color_headerFooter);
-    padding: 10px;
-    display: inline-block;
-    transition: transform 0.3s ease;
-}
-
-.button:hover{
-    background-color: var(--color_primary);
-    transform: translateY(-3px);
-}
-
-/* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
-::-webkit-scrollbar-thumb {
-    background: #1800ad;
-    border-radius: 0;
-}
-
-::-webkit-scrollbar-track {
-    background: #fdfbf7;
-}
 
 /* #region ---------------------------------HEADER-------------------------------- */
 
@@ -222,9 +213,7 @@ header{
 
 /* #endregion */
 
-
-
-/* #region Activities */
+/* #region -------------------------PAGINA DE EXPERIENCIAS------------------------- */
 /* ---------------------------------HERO-------------------------------- */
 
 .a-hero {
@@ -330,6 +319,7 @@ header{
 
 /* #endregion */
 
+/* #region ---------------------------------HOME - ALEJANDRO-------------------------------- */
 .destinations{
     display: flex;
     flex-direction: column;
@@ -377,3 +367,5 @@ header{
 .destinations__subtitle{
     margin: 0;
 }
+
+/* #endregion */
