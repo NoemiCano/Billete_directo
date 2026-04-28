@@ -6,7 +6,8 @@
     --color_primary: #ea1744;
     --color_secondary: #ff4000;
     --color_tertiary: #ffa51f;
-    --color_fourth: #1800ad; /* usado en el prototipo 0B0054 :( */
+    --color_fourth: #1800ad; /* usado en el prototipo 0B0054 */
+    --color_contrast: rgb(243, 243, 243);
 }
 
 body {
@@ -14,12 +15,12 @@ body {
     padding: 0;
     font-family: var(--font_text);
     font-size: 14px;
-    color: var(--color_contrast);
 }
+
+/* #region TEXT*/
 
 a {
     text-decoration: none;
-    color: var(--color_contrast);
 }
 
 h1 {
@@ -29,6 +30,7 @@ h1 {
 h2 {
     font-family: var(--font_title);
     color: var(--color_fourth);
+    color: var(--color_fourth);
     font-size: 3rem;
     line-height: 50px;
     font-weight: 500;
@@ -36,8 +38,7 @@ h2 {
 
 h3 {
     font-family: var(--font_title);
-    font-size: 30px;
-    color: var(--color_fourth);
+    font-size: 24px;
 }
 
 /* #region ---------------------------------HEADER-------------------------------- */
@@ -117,14 +118,6 @@ nav {
     border-top: 1px solid var(--color_contrast);
 }
 
-.text__m{
-    font-size: 16px;
-}
-
-.text__m--white{
-    color: var(--color_contrast);
-}
-
 .footer__icon{
     width: 25px;
     padding: 5px;
@@ -165,7 +158,6 @@ nav {
     color: var(--color_secondary);
     text-shadow: 2px 3px 0px rgb(70, 70, 70, 0.75);
     color: var(--color_fourth);
-    color: var(--color_fourt);
     font-size: 60px;
 }
 
@@ -189,7 +181,6 @@ nav {
     text-align: left;
     color: var(--color_secondary);
     color: var(--color_fourth);
-    color: var(--color_fourt);
 }
 
 .a-carrousel {
@@ -272,21 +263,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items:end;
-}
-
-.tag{
-    color: var(--color_primary);
-    font-family: var(--font_text);
-    font-weight: 700;
-    letter-spacing: 3px;
-    font-size: 0.8rem;
-}
-
-.subtitle{
-    color: var(--color_fourt);
-    font-family: var(--font_title);
-    font-size: 1.5rem;
-    margin-top: 0;
 }
 
 .destinations__button{
