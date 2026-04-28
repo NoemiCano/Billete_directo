@@ -17,6 +17,8 @@ body {
     padding: 0;
     font-family: var(--font_text);
     font-size: 14px;
+    overflow-x: hidden;
+    color: var(--color_fourth);
 }
 
 /* #region ELEMENTS */
@@ -43,7 +45,7 @@ body {
 
 /* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
 ::-webkit-scrollbar-thumb {
-    background: #1800ad;
+    background: var(--color_fourth);
     border-radius: 0;
 }
 
@@ -73,7 +75,6 @@ h1{
 
 h2 {
     font-family: var(--font_title);
-    color: var(--color_fourth);
     font-size: 3rem;
     line-height: 50px;
     font-weight: 500;
@@ -83,7 +84,6 @@ h3 {
     font-family: var(--font_title);
     font-size: 26px;
     font-weight: 500;
-    color: var(--color_fourth);
 }
 
 .tag{
@@ -100,7 +100,6 @@ h3 {
 }
 
 .heading{
-    color: var(--color_fourth);
     margin: 0px;
 }
 
@@ -385,7 +384,6 @@ header{
 
 .destinations__button{
     font-family: var(--font_text);
-    color: var(--color_fourth);
     background-color: transparent;
     font-size: 0.9rem;
     font-weight: 700;
@@ -433,14 +431,12 @@ header{
 }
 
 .card__text{
-    color: var(--color_fourth);
     letter-spacing: 1px;
     font-size: 0.83rem;
     margin-bottom: -25px;
 }
 
 .card__text2{
-    color: var(--color_fourth);
     font-size: 0.9rem;
     margin-top: -20px;
 }
@@ -489,7 +485,6 @@ header{
 
 .card__tag--rating{
     background-color: white;
-    color: var(--color_fourth);
     font-weight: 700;
     bottom: 50px;
     left: 430px;
@@ -525,6 +520,15 @@ header{
     background-color: var(--color_secondary);
     padding: 15px;
     margin-bottom: 10px;
+}
+
+.experiences{
+    background-color: var(--color_tertiary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
 }
 
 /* #endregion */

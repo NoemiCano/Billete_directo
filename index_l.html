@@ -13,15 +13,24 @@
         <div class="header__contain">
             <img class="logo" src="/Images/logo_billeteDirecto.png" alt="">
 
-            <nav>
-                <ul><a class="nav__text" href="index_l.html">INICIO</a></ul>
-                <ul><a class="nav__text" href="destinos.html">DESTINOS</a></ul>
-                <ul><a class="nav__text" href="experiencias.html">EXPERIENCIAS</a></ul>
-                <ul><a class="nav__text" href="nosotros.html">NOSOTROS</a></ul>
-                <ul><a class="nav__text" href="contacto.html">CONTACTO</a></ul>
+            <div class="menu__hamburguesa" id="menu__icon">
+                <img class="menu__hamburguesaImg" src="/Images/icons/menu-alt.svg" alt="Abrir menú">
+            </div>
+
+            <nav class="header__nav">
+                <ul class="nav__container">
+                    <li><a class="nav__text" href="index_l.html">INICIO</a></li>
+                    <li><a class="nav__text" href="destinos.html">DESTINOS</a></li>
+                    <li><a class="nav__text" href="experiencias.html">EXPERIENCIAS</a></li>
+                    <li><a class="nav__text" href="nosotros.html">NOSOTROS</a></li>
+                    <li><a class="nav__text" href="contacto.html">CONTACTO</a></li>
+                    <li class="only-mobile">
+                        <a class="button" href="">AREA PERSONAL</a>
+                    </li>
+                </ul>
             </nav>
 
-            <a class="nav__text button" href="">AREA PERSONAL</a>
+            <a class="button button__mobile" href="">AREA PERSONAL</a>
 
         </div>
 
@@ -29,7 +38,7 @@
     <section class="travel">
         <div class="travel__container">
             <p class="tag">Por qué Billete Directo</p>
-            <h2 class="subtitle">Menos buscar, más <span style="color: var(--color_secondary);">viajar</span>.</h2>
+            <h2 class="subtitle">Menos buscar, más <span style="color: txt--orange;">viajar</span>.</h2>
             <div class="travel__items">
                 <div class="card card--padding">
                     <img class="travel__icon" src="Images/icons/compass.png" alt="Icono de un compás">
@@ -50,7 +59,10 @@
         </div>
     </section>
     <section class="experiences">
-        
+        <h2 class="subtitle">La maleta ya está hecha.</h2>
+        <h2 class="subtitle txt--orange">Solo falta tu sí.</h2>
+        <p class="text__m">Crea tu cuenta gratis, guarda tus destinos favoritos y reserva en <br> menos de 60 segundos.</p>
+        <a href="experiencias.html" class="button"><svg class="destinations__arrow"><path d="m10 17-5-5 5-5"></path><path d="M15 12H5"></path></svg>EMPEZAR AHORA</a>
     </section>
     <footer class="footer">
         <div class="footer__top">
