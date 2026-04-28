@@ -37,8 +37,8 @@ body {
 }
 
 .button:hover{
-    background-color: var(--color_primary);
-    transform: translateY(-3px);
+        background-color: var(--color_primary);
+        transform: translateY(-3px);
 }
 
 /* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
@@ -123,7 +123,6 @@ h3 {
 /* #region ---------------------------------HEADER-------------------------------- */
 
 header{
-    display: flex;
     align-items: center;
     background-color: var(--color_white);
     width: 100%;
@@ -137,6 +136,7 @@ header{
     max-width: 1200px;  /* El ancho máximo que quieras que tenga tu web */
     margin: 0 auto;     /* Centra el bloque en la pantalla sin romper el width */
     box-sizing: border-box;
+    position: relative;
 
 }
 
@@ -168,6 +168,19 @@ header{
 .nav__text.active{
     border-bottom: 2px solid var(--color_secondary);
     
+}
+
+.menu__hamburguesa{
+    display: none;
+    cursor: pointer;
+}
+
+.menu__hamburguesaImg {
+    width: 30px;
+}
+
+.only-mobile{
+    display: none;
 }
 
 /* #endregion */
