@@ -15,7 +15,6 @@ body {
     padding: 0;
     font-family: var(--font_text);
     font-size: 14px;
-    color: var(--color_contrast);
 }
 
 /* #region TEXT*/
