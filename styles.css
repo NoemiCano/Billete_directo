@@ -9,14 +9,14 @@
     --color_fourth: #1800ad; /* usado en el prototipo 0B0054 */
     --color_black: rgb(55, 48, 48);
     --color_white: rgb(243, 243, 243);
-    --color_contrast: rgba(57, 44, 140, 0.4);
+    --color_contrast: rgb(57, 44, 140, 0.4);
 }
-
 
 body {
     margin: 0;
     padding: 0;
     font-family: var(--font_text);
+    font-size: 14px;
 }
 
 /* #region ELEMENTS */
@@ -82,6 +82,7 @@ h2 {
 h3 {
     font-family: var(--font_title);
     font-size: 24px;
+    font-weight: 500;
 }
 
 .tag{
@@ -99,12 +100,21 @@ h3 {
     margin-top: 0;
 }
 
+.heading{
+    color: var(--color_fourth);
+    
+}
+
+.heading--footer{
+    color:var(--color_tertiary);
+}
+
 .text__m{
     font-size: 16px;
 }
 
-.text__m--white{
-    color: var(--color_white);
+.text__m--grey{
+    color: rgb(128, 127, 134);
 }
 
 /* #endregion */
@@ -112,6 +122,8 @@ h3 {
 /* #region ---------------------------------HEADER-------------------------------- */
 
 header{
+    display: flex;
+    align-items: center;
     background-color: var(--color_white);
     width: 100%;
 }
@@ -203,20 +215,40 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 5px;
-    border-top: 1px solid var(--color_white);
+    padding-right: 230px;
+    padding-left: 230px;
+    border-top: 1px solid rgb(128, 127, 134);
 }
 
 .footer__icon{
-    width: 25px;
-    padding: 5px;
+    width: 20px;
+    padding: 0px;
 }
 
 .footer__icon--media{
     border: 1px solid var(--color_white);
+    padding: 5px;
+}
+
+.footer__icon--media:hover{
+    background-color: var(--color_secondary);
+}
+
+.footer__link{
+    color: var(--color_white);
+    margin-bottom: 10px;
 }
 
 .footer__link:hover{
     color: var(--color_tertiary);
+}
+
+.text__footer{
+    color: var(--color_white);
+    margin: 0px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
 /* #endregion */
