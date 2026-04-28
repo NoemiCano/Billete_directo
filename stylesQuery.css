@@ -1,0 +1,52 @@
+@media (max-width: 800px) {
+
+    /* #region -----MENU HAMBURGUESA----- */
+    
+    .menu__hamburguesa {
+        display: block;
+    }
+
+    .header__nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        /* Ajusta según la altura de tu header */
+        left: 0;
+        width: 100%;
+        background-color: var(--color_white);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+    }
+
+    .header__nav.show {
+        display: flex;
+    }
+
+    .nav__container {
+        flex-direction: column;
+        /* Lista hacia abajo */
+        width: 100%;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .button__mobile {
+        display: none;
+    }
+
+    .only-mobile {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        /* Separación extra */
+    }
+
+    .button:hover {
+        transform: inherit;
+    }
+
+    /* #endregion */
+
+
+}
