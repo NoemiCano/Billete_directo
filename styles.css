@@ -6,10 +6,7 @@
     --color_primary: #ea1744;
     --color_secondary: #ff4000;
     --color_tertiary: #ffa51f;
-    --color_fourt: #1800ad;
-    --color_headerFooter: rgb(243, 243, 243);
     --color_fourth: #1800ad; /* usado en el prototipo 0B0054 :( */
-    --color_contrast: rgb(243, 243, 243);
 }
 
 body {
@@ -31,7 +28,7 @@ h1 {
 
 h2 {
     font-family: var(--font_title);
-    color: var(--color_fourt);
+    color: var(--color_fourth);
     font-size: 3rem;
     line-height: 50px;
     font-weight: 500;
@@ -39,7 +36,8 @@ h2 {
 
 h3 {
     font-family: var(--font_title);
-    font-size: 24px;
+    font-size: 30px;
+    color: var(--color_fourth);
 }
 
 /* #region ---------------------------------HEADER-------------------------------- */
@@ -293,7 +291,7 @@ nav {
 
 .destinations__button{
     font-family: var(--font_text);
-    color: var(--color_fourt);
+    color: var(--color_fourth);
     background-color: transparent;
     font-size: 0.9rem;
     font-weight: 700;
@@ -315,4 +313,90 @@ nav {
 
 .destinations__subtitle{
     margin: 0;
+}
+
+.destinations__cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.card{
+    border: 2px solid rgb(211, 211, 211);
+    width: 100%;
+}
+
+.card__img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card__texts{
+    padding: 5px 25px;
+}
+
+.card__text{
+    color: var(--color_fourth);
+    letter-spacing: 1px;
+    font-size: 0.83rem;
+    margin-bottom: -25px;
+}
+
+.card__text2{
+    color: var(--color_fourth);
+    font-size: 0.9rem;
+    margin-top: -20px;
+}
+
+.card__price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    height: 80px;
+}
+
+.card__text--price{
+    color: rgb(153, 153, 153);
+    margin: 0;
+}
+
+.card__priceText{
+    color: var(--color_secondary);
+    font-family: var(--font_title);
+    font-size: 1.5rem;
+    margin: 0;
+}   
+
+.card__divider{
+    border: none;
+    border-top: 1px solid rgb(211, 211, 211);
+    margin: 0;
+    width: 90%;
+    margin-left: 25px;
+}
+
+.card__tag{
+    background-color: var(--color_secondary);
+    color: white;
+    padding: 6px 12px;
+    letter-spacing: 2px;
+    font-size: 0.75rem;
+    margin-bottom: -25px;
+    font-weight: 600;
+    width: fit-content;
+    position: relative;
+    bottom: 235px;
+    left: 20px;
+}
+
+.card__tag--rating{
+    background-color: white;
+    color: var(--color_fourth);
+    font-weight: 700;
+    bottom: 50px;
+    left: 430px;
 }
