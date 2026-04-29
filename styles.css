@@ -455,6 +455,16 @@ header {
     align-items: center;
     justify-content: center;
     gap: 10px;
+    color: var(--color_fourth);
+    transition: 0.2s;
+}
+
+.destinations__button:hover{
+    color: var(--color_secondary);
+}
+
+.destinations__button:hover .destinations__arrow{
+    transform: translateX(-5px);
 }
 
 .destinations__arrow {
@@ -463,6 +473,7 @@ header {
     fill: none;
     stroke: currentColor;
     stroke-width: 2;
+    transition: 0.2s;
 }
 
 .destinations__cards {
@@ -477,6 +488,7 @@ header {
     border: 2px solid var(--color_contrast);
     width: 100%;
     background-color: white;
+    position: relative;
 }
 
 .card--padding {
@@ -541,8 +553,8 @@ header {
     margin-bottom: -25px;
     font-weight: 600;
     width: fit-content;
-    position: relative;
-    bottom: 235px;
+    position: absolute; 
+    top: 20px;       
     left: 20px;
 }
 
@@ -550,8 +562,11 @@ header {
     background-color: white;
     font-weight: 800;
     bottom: 50px;
-    left: 87%;
     color: var(--color_fourth);
+    left: auto;  
+    top: 200px;       /* Desactiva el left del tag base */
+    right: 20px;
+    height: 15px;
 }
 
 .tag--color {
