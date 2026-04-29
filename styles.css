@@ -708,3 +708,124 @@ header {
 }
 
 /* #endregion*/
+
+/* #region ----- NOSTROS ----- */
+
+.n-history{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid var(--color_contrast);
+}
+
+.n-history__container{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.n-history__text{
+    line-height: 22px;
+}
+
+.n-history__title{
+    line-height: 60px;
+    margin-top: 5px;
+}
+
+.n-history__titleColor {
+    color: var(--color_secondary);
+}
+
+.n-history__img{
+    height: 380px;
+    object-fit: cover;
+    width: 50%;
+    border: 2px solid var(--color_contrast);
+    box-shadow: 5px 5px var(--color_fourth);
+}
+
+.n-objectives{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.n-objectives__container{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+
+.n-objectives__cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.n-objectives__card{
+    border: 2px solid var(--color_contrast);
+    padding: 30px;
+    line-height: 22px;
+}
+
+.n-objectives__icon{
+    width: 24px;
+    height: 24px;
+    fill: none;
+    background-color: var(--color_primary);
+    stroke: var(--color_white);
+    stroke-width: 2.5;
+    stroke-linecap: round; 
+    stroke-linejoin: round;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.n-numbers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--color_tertiary);
+    padding: 50px 0;
+}
+
+.n-numbers__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+}
+
+.n-numbers__cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 50px 0;
+}
+
+.n-numbers__card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 55px 10px;
+    border: 2px solid var(--color_contrast);
+}
+
+.n-number__text{
+    font-weight: 700;
+}
+
+/* #endregion */
