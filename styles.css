@@ -253,9 +253,19 @@ header{
 .footer__top{
     width: 80%;
     display: flex;
+    justify-content: center;
+    align-items:start;
+    gap: 5%;
+    margin: 50px;
+}
+
+.footer__info{
+    width: max-content;
+    min-width: 60%;
+    display: flex;
     justify-content: space-between;
     align-items:start;
-    margin: 50px;
+    margin: 0px;
 }
 
 .footer__column{
@@ -269,8 +279,6 @@ header{
     justify-content: space-between;
     align-items: center;
     margin: 5px;
-    padding-right: 230px;
-    padding-left: 230px;
     border-top: 1px solid rgb(128, 127, 134);
 }
 
@@ -579,3 +587,35 @@ header{
 }
 
 /* #endregion */
+
+
+/* #region --------------------------------- CONTACTO -------------------------------- */
+
+.c-title{
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-content{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c.content__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c.content__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #endregion*/

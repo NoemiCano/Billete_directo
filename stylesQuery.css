@@ -1,4 +1,4 @@
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     /* #region -----MENU HAMBURGUESA----- */
     
@@ -48,5 +48,93 @@
 
     /* #endregion */
 
+    /* #region -----FOOTER----- */
+
+    .footer__top{
+        flex-direction: column;
+        align-items: center ;
+    }
+
+    .footer__info {
+        width: 100%;
+        min-width: auto;
+        justify-content: space-between;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    .footer__bottom{
+        gap: 15px;
+    }
+
+    /* #endregion*/
+
+}
+
+@media (max-width:700px ){
+    
+    /* #region -----FOOTER----- */
+
+    .footer__top {
+        margin: 30px 20;
+        gap: 30px;
+    }
+
+    /* #endregion */
+
+}
+
+@media (max-width:600px ){
+
+    /* #region ----- HOME - LAURA ----- */
+
+    .travel__items {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .travel__items .card {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 15px;
+        row-gap: 8px;
+        align-items: start;
+    }
+
+    .travel__icon {
+        width: 22px;
+        padding: 12px;
+        margin-bottom: 12px;
+        grid-row: 1 / 3;   
+        margin: 0;
+    }
+
+    .travel__items .card h3 {
+        grid-column: 2;
+        margin: 0;
+    }
+
+    .travel__items .card p {
+        grid-column: 2;
+        margin: 0;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+        line-height: 38px;
+    }
+
+    .heading {
+        font-size: 22px;
+    }
+
+    .text__m {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    /* #endregion */
 
 }
