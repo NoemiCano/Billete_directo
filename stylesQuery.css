@@ -84,6 +84,52 @@
 
     /* #endregion */
 
+    /* #region -----CONTACT----- */
+
+    .c-title,
+    .c-content {
+        width: 90%;
+    }
+
+    .c-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .c-content__info,
+    .c-content__form {
+        width: 90%;
+    }
+
+    .c-content__row {
+        flex-direction: column;
+    }
+
+    /* #endregion*/
+
+    /* #region -----LOG IN----- */
+
+    .l-log {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .l-form{
+        width: 80%;
+    }
+
+    .l-form__input{
+        width: 80%;
+    }
+
+    .l-img{
+        display: none;
+    }
+
+    /* #endregion */
+
 }
 
 @media (max-width:600px ){

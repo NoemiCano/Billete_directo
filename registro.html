@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Register</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylesQuery.css">
 </head>
@@ -36,65 +36,29 @@
         </div>
 
     </header>
-    <section class="c-title">
-        <p class="tag">Contacto</p>
-        <h1 class="title">Hablemos de tu <span class="txt--orange"> próximo <br> viaje. </span></h1>
-    </section>
-    <section class="c-content">
-        <div class="c-content__info">
-            <h3 class="heading">Dónde encontrarnos</h3>
-            <p class="text__m">Estamos disponibles de lunes a sábado, de 9 a 20h. Ven a tomar un café o escríbenos.</p>
-            <ul class="c-content__list">
-                <li class="c-content__item">
-                    <img class="c-content__icon" src="Images/icons/ubication-blue.png" alt="Icono de ubicación">
-                    <div class="c-content__details">
-                        <p class="tag">Oficina central</p>
-                        <h3 class="heading heading--small">Gran Vía 23, Madrid</h3>
-                    </div>
-                </li>
-                <li class="c-content__item">
-                    <img class="c-content__icon" src="Images/icons/compass.png" alt="Icono de un sobre">
-                    <div class="c-content__details">
-                        <p class="tag">Email</p>
-                        <h3 class="heading heading--small">hola@billetedirecto.com</h3>
-                    </div>
-                </li>
-                <li class="c-content__item">
-                    <img class="c-content__icon" src="Images/icons/compass.png" alt="Icono de un teléfono">
-                    <div class="c-content__details">
-                        <p class="tag">Teléfono</p>
-                        <h3 class="heading heading--small">+34 910 000 000</h3>
-                    </div>
-                </li>
-            </ul>
-            <div class="c-content__map">
-                <iframe title="Mapa Billete Directo" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7104%2C40.4176%2C-3.6972%2C40.4246&layer=mapnik&marker=40.4211%2C-3.7038" loading="lazy"></iframe>
+    <section class="l-log">
+        <form class="l-form" action="https://formsubmit.co/your@email.com" method="POST">
+            <p class="tag">Iniciar sesión</p>
+            <h2 class="subtitle">Entra a tu cuenta</h2>
+            <div class="l-form__row">
+                <label class="l-form__field">
+                    <span class="tag">Email</span>
+                    <input type="email" class="l-form__input" name="email" required>
+                </label>
+            </div>
+            <label class="l-form__field">
+                <span class="tag">Contraseña</span>
+                <input class="l-form__input" required>
+            </label>
+            <button type="submit" class="button button--orange">Entrar</button>
+        </form>
+        <div class="l-img">
+            <img class="logo" src="Images/logo_billeteDirecto.png" alt="Logotipo de Billete Directo">
+            <div class="l-img__content">
+                <h1 class="title">Viaja más. <br>Espera menos.</h1>
+                <p>Crea tu cuenta y guarda tus destinos favoritos, gestiona reservas y accede a ofertas exclusivas.</p>
             </div>
         </div>
-        <form class="c-content__form" action="https://formsubmit.co/your@email.com" method="POST">
-            <h3 class="subtitle">Escríbenos</h3>
-            <p class="text__m">Cuéntanos qué tienes en mente y te contestamos en menos de 24h.</p>
-            <div class="c-content__row">
-                <label class="c-content__field">
-                    <span class="tag">Nombre</span>
-                    <input class="c-content__input" type="text" name="name" required>
-                </label>
-                <label class="c-content__field">
-                    <span class="tag">Email</span>
-                    <input type="email" class="c-content__input" name="email" required>
-                </label>
-            </div>
-            <label class="c-content__field">
-                <span class="tag">Asunto</span>
-                <input class="c-content__input" required>
-            </label>
-            <label class="c-content__field">
-                <span class="tag">Mensaje</span>
-                <textarea rows="5" class="c-content__textarea" required></textarea>
-            </label>
-            <button type="submit" class="button button--orange">Enviar mensaje</button>
-            <p class="text__m--grey">* Este formulario es demostrativo y no envía datos reales.</p>
-        </form>
     </section>
     <footer class="footer">
         <div class="footer__top">
