@@ -71,6 +71,34 @@
 
     /* #endregion*/
 
+    /* #region ----- HOME - ALEJANDRO ----- */
+
+    .destinations__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* #endregion */
+
+    /* #region ----- NOSOTROS ----- */
+
+    .n-history__container{
+        flex-direction: column;
+    }
+
+    .n-history__img{
+        width: 80%;
+    }
+
+    .n-objectives__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .n-numbers__cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* #endregion */
+
 }
 
 @media (max-width:700px ){
@@ -84,7 +112,26 @@
 
     /* #endregion */
 
-    /* #region -----CONTACT----- */
+    /* #region ----- HOME - ALEJANDRO ----- */
+
+    .destinations__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .offers__cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .destinations__top{
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 20px;
+    }
+
+    /* #endregion */
+
+/* #region -----CONTACT----- */
 
     .c-title,
     .c-content {
@@ -108,27 +155,6 @@
     }
 
     /* #endregion*/
-
-    /* #region -----LOG IN----- */
-
-    .l-log {
-        flex-direction: column;
-        overflow-x: hidden;
-    }
-
-    .l-form{
-        width: 80%;
-    }
-
-    .l-form__input{
-        width: 80%;
-    }
-
-    .l-img{
-        display: none;
-    }
-
-    /* #endregion */
 
 }
 
@@ -181,6 +207,14 @@
         line-height: 24px;
     }
 
+    /* #endregion */
+
+        /* #region ----- NOSOTROS ----- */
+
+    .n-objectives__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
     /* #endregion */
 
 }
