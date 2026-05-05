@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesQuery.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__contain">
+            <img class="logo" src="/Images/logo_billeteDirecto.png" alt="">
+
+            <div class="menu__hamburguesa" id="menu__icon">
+                <img class="menu__hamburguesaImg" src="/Images/icons/menu-alt.svg" alt="Abrir menú">
+            </div>
+
+            <nav class="header__nav">
+                <ul class="nav__container">
+                    <li><a class="nav__text" href="index_l.html">INICIO</a></li>
+                    <li><a class="nav__text" href="destinos.html">DESTINOS</a></li>
+                    <li><a class="nav__text" href="experiencias.html">EXPERIENCIAS</a></li>
+                    <li><a class="nav__text" href="nosotros.html">NOSOTROS</a></li>
+                    <li><a class="nav__text" href="contacto.html">CONTACTO</a></li>
+                    <li class="only-mobile">
+                        <a class="button button--orange" href="">AREA PERSONAL</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="button button--orange button--movement button__mobile" href="">AREA PERSONAL</a>
+
+        </div>
+
+    </header>
+    <section class="c-title">
+        <p class="tag">Contacto</p>
+        <h1 class="title">Hablemos de tu <span class="txt--orange"> próximo <br> viaje. </span></h1>
+    </section>
+    <section class="c-content">
+        <div class="c-content__info">
+            <h3 class="heading">Dónde encontrarnos</h3>
+            <p class="text__m">Estamos disponibles de lunes a sábado, de 9 a 20h. Ven a tomar un café o escríbenos.</p>
+            <ul class="c-content__list">
+                <li class="c-content__item">
+                    <img class="c-content__icon" src="Images/icons/ubication-blue.png" alt="Icono de ubicación">
+                    <div class="c-content__details">
+                        <p class="tag">Oficina central</p>
+                        <h3 class="heading heading--small">Gran Vía 23, Madrid</h3>
+                    </div>
+                </li>
+                <li class="c-content__item">
+                    <img class="c-content__icon" src="Images/icons/compass.png" alt="Icono de un sobre">
+                    <div class="c-content__details">
+                        <p class="tag">Email</p>
+                        <h3 class="heading heading--small">hola@billetedirecto.com</h3>
+                    </div>
+                </li>
+                <li class="c-content__item">
+                    <img class="c-content__icon" src="Images/icons/compass.png" alt="Icono de un teléfono">
+                    <div class="c-content__details">
+                        <p class="tag">Teléfono</p>
+                        <h3 class="heading heading--small">+34 910 000 000</h3>
+                    </div>
+                </li>
+            </ul>
+            <div class="c-content__map">
+                <iframe title="Mapa Billete Directo" src="https://www.openstreetmap.org/export/embed.html?bbox=-3.7104%2C40.4176%2C-3.6972%2C40.4246&layer=mapnik&marker=40.4211%2C-3.7038" loading="lazy"></iframe>
+            </div>
+        </div>
+        <form class="c-content__form" action="https://formsubmit.co/your@email.com" method="POST">
+            <h3 class="subtitle">Escríbenos</h3>
+            <p class="text__m">Cuéntanos qué tienes en mente y te contestamos en menos de 24h.</p>
+            <div class="c-content__row">
+                <label class="c-content__field">
+                    <span class="tag">Nombre</span>
+                    <input class="c-content__input" type="text" name="name" required>
+                </label>
+                <label class="c-content__field">
+                    <span class="tag">Email</span>
+                    <input type="email" class="c-content__input" name="email" required>
+                </label>
+            </div>
+            <label class="c-content__field">
+                <span class="tag">Asunto</span>
+                <input class="c-content__input" required>
+            </label>
+            <label class="c-content__field">
+                <span class="tag">Mensaje</span>
+                <textarea rows="5" class="c-content__textarea" required></textarea>
+            </label>
+            <button type="submit" class="button button--orange">Enviar mensaje</button>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__column">
+                <img class="logo" src="/Images/logo_billeteDirecto.png" alt="Logotipo de Billete Directo">
+                <p class="text--white">Tu agencia de viajes directa al mejor <br> destino. Sin escalas, sin
+                    complicaciones.</p>
+                <div class="footer__icons">
+                    <img class="footer__icon footer__icon--media" src="Images/icons/instagram.png" alt="Logo Instagram">
+                    <img class="footer__icon footer__icon--media" src="Images/icons/facebook.png" alt="Logo Facebook">
+                    <img class="footer__icon footer__icon--media" src="Images/icons/twitter.png" alt="Logo Twitter">
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__column">
+                    <h3 class="heading heading--footer">Explora</h3>
+                    <a href="" class="footer__link">Destinos</a>
+                    <a href="" class="footer__link">Experiencias</a>
+                    <a href="" class="footer__link">Nosotros</a>
+                    <a href="" class="footer__link">Contacto</a>
+                </div>
+                <div class="footer__column">
+                    <h3 class="heading heading--footer">Legal</h3>
+                    <a href="" class="text__footer">Aviso legal</a>
+                    <a href="" class="text__footer">Política de privacidad</a>
+                    <a href="" class="text__footer">Términos y condiciones</a>
+                    <a href="" class="text__footer">Cookies</a>
+                </div>
+                <div class="footer__column">
+                    <h3 class="heading heading--footer">Contacto</h3>
+                    <p class="text__footer">
+                        <img class="footer__icon" src="/Images/icons/ubication.png" alt="Icono de ubicacion">
+                        Gran Vía 23, Madrid
+                    </p>
+                    <p class="text__footer">
+                        <img class="footer__icon" src="/Images/icons/mail.png" alt="Icono de correo electrónico">
+                        hola@billetedirecto.com
+                    </p>
+                    <p class="text__footer">
+                        <img class="footer__icon" src="/Images/icons/phone.png" alt="Icono de un teléfono">
+                        +34 910 000 000
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="text__m text__m--grey">© 2026 Billete Directo · Trabajo de clase</p>
+            <p class="text__m text__m--grey">Hecho con viajes ✈️ en España</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
