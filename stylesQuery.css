@@ -156,6 +156,27 @@
 
     /* #endregion*/
 
+    /* #region -----LOG IN----- */
+
+    .l-log {
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .l-form{
+        width: 80%;
+    }
+
+    .l-form__input{
+        width: 80%;
+    }
+
+    .l-img{
+        display: none;
+    }
+
+    /* #endregion */
+
 }
 
 @media (max-width:600px ){
