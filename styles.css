@@ -818,6 +818,82 @@ header {
 
 /* #endregion*/
 
+/* #region --------------------------------- DESTINOS -------------------------------- */
+
+.main__form {
+    background: url(Images/fondoForm.jpg) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 70px;
+}
+
+.form {
+    background-color: white;
+    padding: 40px;
+    border: 2px solid var(--color_contrast);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 900px;
+    width: 95%;
+    margin: 0 auto;
+    box-sizing: border-box; 
+}
+
+.destination__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    margin-bottom: 30px;
+}
+
+.destination__input {
+    text-align: center;
+}
+
+.destination__input label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.destination__input-wrap input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.form__action {
+    display: flex;
+    justify-content: center;
+}
+
+.button__search {
+    background-color: var(--color_secondary);
+    color: white;
+    border: none;
+    padding: 15px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button__search:hover {
+    background-color: var(--color_primary);
+}
+
+/* #endregion*/
+
 
 /* #region --------------------------------- LOG IN -------------------------------- */
 
