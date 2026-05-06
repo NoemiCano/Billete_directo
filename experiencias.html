@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link rel="stylesheet" href="/stylesQuery.css">
+    <title>Experiencias</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesQuery.css">
 </head>
-
 <body>
 
     <header>
@@ -21,13 +19,13 @@
 
             <nav class="header__nav">
                 <ul class="nav__container">
-                    <li><a class="nav__text" href="index_l.html">INICIO</a></li>
+                    <li><a class="nav__text" href="index.html">INICIO</a></li>
                     <li><a class="nav__text" href="destinos.html">DESTINOS</a></li>
                     <li><a class="nav__text" href="experiencias.html">EXPERIENCIAS</a></li>
                     <li><a class="nav__text" href="nosotros.html">NOSOTROS</a></li>
                     <li><a class="nav__text" href="contacto.html">CONTACTO</a></li>
                     <li class="only-mobile">
-                        <a class="button button--orange" href="">AREA PERSONAL</a>
+                        <a class="button button--orange" href="registro.html">AREA PERSONAL</a>
                     </li>
                 </ul>
             </nav>
@@ -39,142 +37,75 @@
     </header>
 
     <section class="e-hero">
-        <p class="tag">CATÁLOGO</p>
-        <h1 >Todas las experiencias, <span class="txt--orange">una sola ventana.</span></h1>
-        <p>Selección con todas las experiencias posibles por España o Internacionales.</p>
+
+        <div class="e-hero__container">
+
+            <p class="tag">CATÁLOGO</p>
+
+            <h1 class="e-title">Un mundo de experiencias, <span class="txt--orange">en un solo lugar.</span></h1>
+
+            <p>Descubre una cuidada selección de aventuras inolvidables, desde los rincones más cercanos hasta los destinos internacionales más exóticos.</p>
+
+        </div>
+
     </section>
 
-    <section class="a-destinations">
+    <section class="e-experiences">
 
-        <div class="a-destinations__banners">
+        <div class="e-experiencres__container">
 
-            <h2 class="a-destinations__title">Actividades donde quiera que vayas</h2>
+            <h2 class="txt--orange">Experiencias internacionales</h2>
 
-            <div class="a-carrousel">
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__imgContainer">
-                        <img class="a-carrousel__img" src="/Images/Roma.jpg" alt="imagen de Roma">
+            <div class="offers__cards">
+    
+                    <div class="card card__row">
+    
+                        <img class="card__img card__img--offers" src="./Images/Paris.jpg" alt="">
+                        <div class="card__tag card__tag--offers">-25%</div>
+                        <div class="card__texts">
+                            <h3 class="card__title">Paris</h3>
+                            <p class="card__text2">Modernismo, playa y gastronomía mediterránea</p>
+    
+                        </div>
+                        <div class="card__price card__price--offers">
+                            <p class="card__priceText card__priceText--offers">240€ <span class="card__priceCross">320€</span></p>
+                        </div>
+    
                     </div>
-
-                    <span class="a-carrousel__text">Roma</span>
-
-                </div>
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/Paris.jpg" alt="imagen de Paris">
-
+    
+                    <div class="card card__row">
+    
+                        <img class="card__img card__img--offers" src="./Images/Paris.jpg" alt="">
+                        <div class="card__tag card__tag--offers">-25%</div>
+                        <div class="card__texts">
+                            <h3 class="card__title">Paris</h3>
+                            <p class="card__text2">Modernismo, playa y gastronomía mediterránea</p>
+    
+                        </div>
+                        <div class="card__price card__price--offers">
+                            <p class="card__priceText card__priceText--offers">240€ <span class="card__priceCross">320€</span></p>
+                        </div>
+    
                     </div>
-
-                    <span class="a-carrousel__text">París</span>
-
-                </div>
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/Budapest.png" alt="imagen de Budapest">
-
+    
+                    <div class="card card__row">
+    
+                        <img class="card__img card__img--offers" src="./Images/Paris.jpg" alt="">
+                        <div class="card__tag card__tag--offers">-25%</div>
+                        <div class="card__texts">
+                            <h3 class="card__title">Paris</h3>
+                            <p class="card__text2">Modernismo, playa y gastronomía mediterránea</p>
+    
+                        </div>
+                        <div class="card__price card__price--offers">
+                            <p class="card__priceText card__priceText--offers">240€ <span class="card__priceCross">320€</span></p>
+                        </div>
+    
                     </div>
-
-                    <span class="a-carrousel__text">Budapest</span>
-
+    
                 </div>
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/Amsterdam.png" alt="imagen de Amsterdam">
-
-                    </div>
-
-                    <span class="a-carrousel__text">Ámsterdam</span>
-
-                </div>
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/Madrid.jpg" alt="imagen de Madrid">
-
-                    </div>
-                    <span class="a-carrousel__text">Madrid</span>
-
-                </div>
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/Venecia.jpg" alt="imagen de Venecia">
-
-                    </div>
-
-                    <span class="a-carrousel__text">Venecia</span>
-
-                </div>
-            </div>
         </div>
 
-        <div class="a-destinations__banners">
-
-            <h2 class="a-destinations__title">Atracciones que no te puedes perder</h2>
-
-            <div class="a-carrousel">
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/estatua de la libertad.jpg"
-                            alt="imagen de la Estatua de la Libertad">
-                    </div>
-
-                    <span class="a-carrousel__text">Estatua de la Libertad</span>
-                    <p class="a-carrousel__text--small">188 actividades</p>
-
-                </div>
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/Museo vaticano.jpg"
-                            alt="imagen del museo del vaticano">
-
-                    </div>
-
-                    <span class="a-carrousel__text">Museo del Vaticano</span>
-                    <p class="a-carrousel__text--small">526 actividades</p>
-
-                </div>
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/Torre Eiffel.jpg" alt="imagen de la Torre Eiffel">
-
-                    </div>
-
-                    <span class="a-carrousel__text">Torre Eiffel</span>
-                    <p class="a-carrousel__text--small">554 actividades</p>
-
-                </div>
-
-                <div class="a-carrousel__card">
-
-                    <div class="a-carrousel__img-container">
-                        <img class="a-carrousel__img" src="/Images/Museo metropolitano.jpg"
-                            alt="imagen del museo metropolitano de arte">
-
-                    </div>
-
-                    <span class="a-carrousel__text">Museo Metropolitano de Arte</span>
-                    <p class="a-carrousel__text--small">66 actividades</p>
-
-                </div>
-            </div>
-        </div>
 
 
     </section>
@@ -182,5 +113,4 @@
 
     <script src="script.js"></script>
 </body>
-
 </html>

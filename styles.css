@@ -332,26 +332,53 @@ header {
 /* #region -------------------------PAGINA DE EXPERIENCIAS------------------------- */
 /* ---------------------------------HERO-------------------------------- */
 
-.e-hero { /* Todos los ssection deben ser width 80% */
+.e-title{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.e-hero{
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: center;
-    width: 80%;
+    align-items: center;
 }
 
-.a-hero_title {
-    color: var(--color_secondary);
-    text-shadow: 2px 3px 0px rgb(70, 70, 70, 0.75);
-    font-size: 60px;
-}
-
-/* ---------------------------------Destinations-------------------------------- */
-
-.a-destinations {
+.e-hero__container{
     display: flex;
     flex-direction: column;
-
+    width: 80%;
+    justify-content: center;
+    border-bottom: 2px solid var(--color_contrast);
+    margin-top: 60px;
 }
+
+/* -----------------------------EXPERIENCES---------------------------- */
+
+.e-experiences{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.e-experiencres__container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    justify-content: center;
+}
+
+.card.card__row{
+    display: flex;
+    flex-direction: row; /* Alinea imagen e info en horizontal */
+    align-items: stretch;
+    overflow: hidden;
+}
+
+/* #region OBSOLETO EXPERIENCIAS ---------------------------------Destinations-------------------------------- */
 
 .a-destinations__banners {
     display: flex;
