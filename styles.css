@@ -417,7 +417,8 @@ header {
 .card.card__row{
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 100%;
+    min-height: 220px;
     cursor: pointer;
     margin-top: 0;
 }
@@ -438,6 +439,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+    width: 100%;
+
 }
 
 .card__row .card__title {
@@ -446,10 +452,12 @@ header {
 
 .card__row .card__text2 {
     margin: 5px 0;
+    max-width: 100%;
 }
 
 .card__divider--short {
     margin: 15px 0;
+    max-width: 100%;
 }
 
 .card__footer {
@@ -461,6 +469,7 @@ header {
 .e-experiences .offers__cards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
     gap: 30px;
     padding: 20px 0;
 }

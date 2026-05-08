@@ -1,3 +1,19 @@
+@media (max-width:1080px) {
+
+    /* #region --- EXPERIENCIAS ---- */
+
+    .e-hero__container,
+    .e-experiencres__container {
+        width: 90%;
+    }
+
+    .e-experiences .offers__cards {
+        grid-template-columns: 1fr;
+    }
+
+    /* #endregion */
+}
+
 @media (max-width: 900px) {
 
     /* #region -----MENU HAMBURGUESA----- */
@@ -288,4 +304,31 @@
 
     /* #endregion */
 
+    /* #region --- EXPERIENCIAS ---- */
+
+    .card.card__row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card__row .card__img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card__row .card__texts {
+        width: 90%;
+    }
+
+    .card__price-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    /* #endregion */
 }
