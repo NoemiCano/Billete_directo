@@ -10,7 +10,6 @@
         display: none;
         position: absolute;
         top: 70px;
-        /* Ajusta según la altura de tu header */
         left: 0;
         width: 100%;
         background-color: var(--color_white);
@@ -24,7 +23,6 @@
 
     .nav__container {
         flex-direction: column;
-        /* Lista hacia abajo */
         width: 100%;
         padding: 20px 0;
         gap: 15px;
@@ -39,7 +37,6 @@
         width: 100%;
         text-align: center;
         margin-top: 10px;
-        /* Separación extra */
     }
 
     .button:hover {
