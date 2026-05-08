@@ -56,6 +56,56 @@
 
     </header>
 
+    <section class="hero hidden">
+
+        <div class="hero__container">
+            <p class="tag tag--background">AGENCIA DE VIAJES DIRECTOS</p>
+            <h1 class="txt--white">Tu próximo viaje, <span class="txt--yellow">sin <br>escalas,</span> <br>sin rodeos.
+            </h1>
+            <p class="text__m txt--white">Vuelos, hoteles y experiencias seleccionados a mano. Del sofá al <br>destino
+                de tus sueños en un solo clic.</p>
+
+            <div class="hero__actions">
+                <a class="button button--orange button--movement hero__button" href="destinos.html">
+                    <svg class="destinations__arrow">
+                        <path d="m10 17-5-5 5-5"></path>
+                        <path d="M15 12H5"></path>
+                    </svg> EXPLORAR DESTINOS</a>
+                <a class="button button--white button--movement hero__button" href="experiencias.html">VER EXPERIENCIAS</a>
+            </div>
+
+            <form class="search__container" method="POST">
+
+                <div class="content">
+                    <label class="content__field">
+                        <span class="tag">¿A DÓNDE?</span>
+                        <input class="content__input" type="text" name="destino"
+                            placeholder="Barcelona, Tokio, Maldivas...">
+                    </label>
+                    <label class="content__field">
+                        <span class="tag">¿CUÁNDO?</span>
+                        <input type="date" class="content__input" name="fecha">
+                    </label>
+                </div>
+
+                <button type="submit" class="button button--blue">
+                    <svg class="search__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span>BUSCAR</span>
+                </button>
+            </form>
+
+        </div>
+
+
+
+    </section>
+
+
+
     <section class="destinations hidden">
 
         <div class="destinations__container">
@@ -280,6 +330,7 @@
             </div>
         </div>
     </section>
+
     <section class="experiences hidden">
         <h2 class="subtitle">La maleta ya está hecha.</h2>
         <h2 class="subtitle txt--orange">Solo falta tu sí.</h2>
