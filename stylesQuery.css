@@ -1,7 +1,7 @@
 @media (max-width: 900px) {
 
     /* #region -----MENU HAMBURGUESA----- */
-    
+
     .menu__hamburguesa {
         display: block;
     }
@@ -47,9 +47,9 @@
 
     /* #region -----FOOTER----- */
 
-    .footer__top{
+    .footer__top {
         flex-direction: column;
-        align-items: center ;
+        align-items: center;
     }
 
     .footer__info {
@@ -62,7 +62,7 @@
         margin-bottom: 0px;
     }
 
-    .footer__bottom{
+    .footer__bottom {
         gap: 15px;
     }
 
@@ -73,33 +73,74 @@
     .destinations__cards {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
+    /* #endregion */
+
+    /* #region -----HOME - NOEMI ---- */
+
+    .content__input {
+        width: 180px;
+    }
+
     /* #endregion */
 
     /* #region ----- NOSOTROS ----- */
 
-    .n-history__container{
+    .n-history__container {
         flex-direction: column;
     }
 
-    .n-history__img{
+    .n-history__img {
         width: 80%;
     }
 
-    .n-objectives__cards{
+    .n-objectives__cards {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .n-numbers__cards{
+    .n-numbers__cards {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     /* #endregion */
 
 }
 
-@media (max-width:700px ){
-    
+@media (max-width:700px) {
+
+    /* #region -----HOME - NOEMI ---- */
+
+    .hero__container {
+        margin-top: 1rem;
+
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero__button {
+        width: 170px;
+
+    }
+
+    .search__container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .hero {
+        height: auto;
+    }
+
+    /* #endregion */
+
     /* #region -----FOOTER----- */
 
     .footer__top {
@@ -114,12 +155,12 @@
     .destinations__cards {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .offers__cards {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .destinations__top{
+    .destinations__top {
         flex-direction: column;
         align-items: start;
         justify-content: start;
@@ -128,7 +169,7 @@
 
     /* #endregion */
 
-/* #region -----CONTACT----- */
+    /* #region -----CONTACT----- */
 
     .c-title,
     .c-content {
@@ -160,15 +201,15 @@
         overflow-x: hidden;
     }
 
-    .l-form{
+    .l-form {
         width: 80%;
     }
 
-    .l-form__input{
+    .l-form__input {
         width: 80%;
     }
 
-    .l-img{
+    .l-img {
         display: none;
     }
 
@@ -176,7 +217,15 @@
 
 }
 
-@media (max-width:600px ){
+@media (max-width:600px) {
+
+    /* #region -----HOME - NOEMI ---- */
+
+    .hero__container br {
+        display: none;
+    }
+
+    /* #endregion */
 
     /* #region ----- HOME - LAURA ----- */
 
@@ -197,7 +246,7 @@
         width: 22px;
         padding: 12px;
         margin-bottom: 12px;
-        grid-row: 1 / 3;   
+        grid-row: 1 / 3;
         margin: 0;
     }
 
@@ -227,16 +276,16 @@
 
     /* #endregion */
 
-        /* #region ----- NOSOTROS ----- */
+    /* #region ----- NOSOTROS ----- */
 
-    .n-objectives__cards{
+    .n-objectives__cards {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .n-numbers__cards{
+    .n-numbers__cards {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     /* #endregion */
 
 }
