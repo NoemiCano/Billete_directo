@@ -1020,7 +1020,7 @@ absolute inset-0 bg-gradient-to-b from-[#FF4000]/70 to-[#0B0054]/70
 /* #endregion */
 
 
-/* #region ----- NOSTROS ----- */
+/* #region ----- NOSOTROS ----- */
 
 .n-history{
     display: flex;
@@ -1037,10 +1037,12 @@ absolute inset-0 bg-gradient-to-b from-[#FF4000]/70 to-[#0B0054]/70
     align-items: center;
     justify-content: space-between;
     padding: 50px 0;
+    gap: 50px;
 }
 
 .n-history__text{
     line-height: 22px;
+    width: 60%;
 }
 
 .n-history__title{
