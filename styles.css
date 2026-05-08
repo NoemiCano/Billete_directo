@@ -1263,3 +1263,17 @@ absolute inset-0 bg-gradient-to-b from-[#FF4000]/70 to-[#0B0054]/70
 }
 
 /* #endregion */
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
