@@ -79,13 +79,21 @@ body {
 }
 
 /* Esto hay que revisarlo porque es para darle color a la barra de desplazamiento lateral pero por ahora no funciona */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
 ::-webkit-scrollbar-thumb {
-    background: var(--color_fourth);
+    background-color: var(--color_fourth);
     border-radius: 0;
 }
 
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color_secondary);
+}
+
 ::-webkit-scrollbar-track {
-    background: #fdfbf7;
+    background-color: #fdfbf7;
 }
 
 /* #endregion */
@@ -969,7 +977,15 @@ header {
 
 .l-img {
     width: 55%;
-    background-image: url(Images/Amsterdam.png);
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(255, 64, 0, 0.7),
+        rgba(11, 0, 84, 0.7)
+    ),
+    url(Images/photo-1488646953014-85cb44e25828.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -977,6 +993,10 @@ header {
     padding: 40px;
     gap: 20px;
 }
+
+/*
+absolute inset-0 bg-gradient-to-b from-[#FF4000]/70 to-[#0B0054]/70
+*/
 
 .l-img__content{
     display: flex;
@@ -1000,7 +1020,7 @@ header {
 /* #endregion */
 
 
-/* #region ----- NOSTROS ----- */
+/* #region ----- NOSOTROS ----- */
 
 .n-history{
     display: flex;
@@ -1017,10 +1037,12 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 50px 0;
+    gap: 50px;
 }
 
 .n-history__text{
     line-height: 22px;
+    width: 60%;
 }
 
 .n-history__title{
@@ -1241,3 +1263,17 @@ header {
 }
 
 /* #endregion */
+
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
