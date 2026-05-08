@@ -160,18 +160,35 @@
 
     .l-log {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         overflow-x: hidden;
     }
 
-    .l-form{
-        width: 80%;
+    .l-form {
+        width: 90%;
+        padding: 40px 30px;
+        align-items: center;
     }
 
-    .l-form__input{
-        width: 80%;
+    .l-form__row {
+        width: 100%;
     }
 
-    .l-img{
+    .l-form__field {
+        width: 100%;
+    }
+
+    .l-form__input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .l-form .button {
+        width: 100%;
+    }
+
+    .l-img {
         display: none;
     }
 
