@@ -235,6 +235,10 @@
     .n-objectives__cards{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .n-numbers__cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
     
     /* #endregion */
 

@@ -1000,7 +1000,7 @@ header {
 /* #endregion */
 
 
-/* #region ----- NOSTROS ----- */
+/* #region ----- NOSOTROS ----- */
 
 .n-history{
     display: flex;
@@ -1017,10 +1017,12 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 50px 0;
+    gap: 50px;
 }
 
 .n-history__text{
     line-height: 22px;
+    width: 60%;
 }
 
 .n-history__title{
