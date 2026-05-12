@@ -239,3 +239,33 @@
     /* #endregion */
 
 }
+
+        /* #region ----- DESTINOS ----- */
+
+@media (max-width: 1024px) {
+    .destination__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main__form {
+        padding: 40px 15px;
+    }
+
+    .form {
+        padding: 25px 15px;
+    }
+
+    .destination__grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .button__search {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+    /* #endregion */
